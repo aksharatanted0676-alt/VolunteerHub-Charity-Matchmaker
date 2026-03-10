@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VolunteerHub - Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+<div class="logo">VolunteerHub</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="opportunities.html">Opportunities</a>
+<a href="auth.html" class="active">Profile</a>
+</nav>
+</header>
+
+<section class="page-banner">
+<h1>Account Login</h1>
+<p>Sign in or create an account to build your volunteer profile.</p>
+</section>
+
+<div class="auth-container">
+
+<!-- LOGIN -->
+<div class="auth-box" id="loginBox">
+
+<h2>Sign In</h2>
+
+<input type="email" id="loginEmail" placeholder="Email">
+<input type="password" id="loginPassword" placeholder="Password">
+
+<button type="button" onclick="loginUser()">Login</button>
+
+<p class="auth-text">
+Don't have an account? 
+<span onclick="showSignup()">Sign Up</span>
+</p>
+
+</div>
+
+
+<!-- SIGNUP -->
+<div class="auth-box signup-box" id="signupBox">
+
+<h2>Create Profile</h2>
+
+<input type="text" id="name" placeholder="Full Name">
+<input type="email" id="email" placeholder="Email">
+<input type="password" id="password" placeholder="Create Password">
+
+<input type="tel" id="phone" placeholder="Phone Number">
+<input type="text" id="location" placeholder="Location">
+<input type="number" id="availability" placeholder="Availability (hours/week)">
+
+<h3>Select Skills</h3>
+
+<div class="skill-toggle">
+
+<button type="button" class="skill-btn" onclick="toggleSkill(this)">Marketing</button>
+<button type="button" class="skill-btn" onclick="toggleSkill(this)">Teaching</button>
+<button type="button" class="skill-btn" onclick="toggleSkill(this)">Design</button>
+<button type="button" class="skill-btn" onclick="toggleSkill(this)">Fundraising</button>
+<button type="button" class="skill-btn" onclick="toggleSkill(this)">Communication</button>
+<button type="button" class="skill-btn" onclick="toggleSkill(this)">Gardening</button>
+
+</div>
+
+<button type="button" onclick="createAccount()">Create Account</button>
+
+<p class="auth-text">
+Already have an account? 
+<span onclick="showLogin()">Sign In</span>
+</p>
+
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 VolunteerHub | Connecting Skills with Purpose</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

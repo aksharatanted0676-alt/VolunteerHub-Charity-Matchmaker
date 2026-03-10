@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VolunteerHub - Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+<div class="logo">VolunteerHub</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="opportunities.html">Opportunities</a>
+<a href="profile.html">Profile</a>
+<a href="dashboard.html" class="active">Dashboard</a>
+</nav>
+</header>
+
+<section class="page-banner">
+<h1>Volunteer Dashboard</h1>
+<p>Track the impact of volunteers and projects.</p>
+</section>
+
+<section class="dashboard-container">
+
+<div class="dashboard-card">
+<h2 id="totalVolunteers">0</h2>
+<p>Total Volunteers</p>
+</div>
+
+<div class="dashboard-card">
+<h2 id="totalHours">0</h2>
+<p>Total Hours Donated</p>
+</div>
+
+<div class="dashboard-card">
+<h2 id="totalProjects">0</h2>
+<p>Total Projects Completed</p>
+</div>
+
+</section>
+<!-- RECENT ACTIVITY -->
+
+<section class="activity-section">
+
+<h2 class="activity-title">Recent Activity</h2>
+
+<div class="activity-list" id="activityList">
+
+<div class="activity-item">
+
+<div class="activity-icon">💜</div>
+
+<div class="activity-text">
+<h3>Completed session at Green Earth Foundation</h3>
+<p>2 days ago • 4 hours contributed</p>
+</div>
+
+</div>
+
+<div class="activity-item">
+
+<div class="activity-icon">💜</div>
+
+<div class="activity-text">
+<h3>Volunteered for Community Food Drive</h3>
+<p>5 days ago • 3 hours contributed</p>
+</div>
+
+</div>
+
+<div class="activity-item">
+
+<div class="activity-icon">💜</div>
+
+<div class="activity-text">
+<h3>Animal Shelter Support Program</h3>
+<p>1 week ago • 5 hours contributed</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CLIENT REVIEWS -->
+
+<section class="testimonial-section">
+
+<h2 class="testimonial-title">Client Reviews</h2>
+
+<div class="testimonial-grid" id="reviewsContainer">
+
+<div class="testimonial-card">
+<img src="https://i.pravatar.cc/80?img=12">
+<h3>Victoria Linton</h3>
+<div class="stars">★★★★★</div>
+<p>The volunteers were incredibly helpful and dedicated. Their support made our community project a great success.</p>
+</div>
+
+<div class="testimonial-card highlight">
+<img src="https://i.pravatar.cc/90?img=5">
+<h3>EXCELLENT JOB!</h3>
+<div class="stars">★★★★★</div>
+<p>The VolunteerHub team showed outstanding commitment and teamwork. Their efforts had a real impact on our organization.</p>
+</div>
+
+<div class="testimonial-card">
+<img src="https://i.pravatar.cc/80?img=20">
+<h3>Nelly Vane</h3>
+<div class="stars">★★★★★</div>
+<p>The team did an amazing job helping us run our charity event smoothly. Highly recommended!</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ADD REVIEW SECTION -->
+
+<section class="add-review">
+
+<h2>Add Your Review</h2>
+
+<form id="reviewForm">
+
+<input type="text" id="clientName" placeholder="Your Name" required>
+
+<textarea id="clientReview" placeholder="Write your review..." required></textarea>
+
+<select id="clientRating">
+<option value="★★★★★">★★★★★</option>
+<option value="★★★★">★★★★</option>
+<option value="★★★">★★★</option>
+<option value="★★">★★</option>
+<option value="★">★</option>
+</select>
+
+<button type="submit">Submit Review</button>
+
+</form>
+
+</section>
+
+<footer>
+<p>© 2026 VolunteerHub | Connecting Skills with Purpose</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
